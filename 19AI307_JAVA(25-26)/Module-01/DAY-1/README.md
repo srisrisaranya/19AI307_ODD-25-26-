@@ -1,13 +1,22 @@
 # Ex.No:1(A) INTRODUCTION TO JAVA PROGRAMMING, DATA TYPES, VARIABLES AND OPERATORS
 
 ## QUESTION:
-Lovely has just started learning Java and is very excited about how to display messages on the screen. Her first mission is to understand how different types of print statements work:
 
-System.out.print() → prints on the same line
+Lovely wants to enter a secure tech conference. The security system checks certain conditions to grant access. These conditions are:
 
-System.out.println() → prints and moves to the next line
+She must be registered (true/false).
 
-System.out.printf() → prints formatted output
+She must have a valid ID (true/false).
+
+She must NOT be blacklisted (true/false).
+
+The system uses logical operators to evaluate her access eligibility:
+
+If she is registered AND has a valid ID, and NOT blacklisted, she is granted access.
+
+Otherwise, access is denied.
+
+Your task is to evaluate these conditions using logical operators and print whether access is granted or denied.
 
 
 ## AIM:
@@ -36,16 +45,14 @@ Register Number:212223110044
 ```
 import java.util.*;
 public class main{
-    public static void main(String[] args){
+    public static void main(String[] arg)
+    {
         Scanner sc=new Scanner(System.in);
-        int a=sc.nextInt();
-        System.out.println("Initial countdown = "+a);
-        int post=a--;
-        System.out.println("After post-decrement (a--) = "+post+", Now a = "+a);
-        int pre=--a;
-        
-        
-        System.out.println("After pre-decrement (--a) = "+pre+", Now a = "+a);
+        boolean r=sc.nextBoolean();
+        boolean v=sc.nextBoolean();
+        boolean b=sc.nextBoolean();
+        boolean res=((r&&v)&&!b);
+        System.out.println("Access Granted: "+res);
         sc.close();
     }
 }
