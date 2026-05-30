@@ -13,7 +13,7 @@ Display the series in a clear and readable format.
 To write a java program for Fibonacci series.
 
 ## ALGORITHM :
-
+```
 1.	Start the program.
 2.	Import the necessary package 'java.util'
 3.	Read the number n from the user.
@@ -27,7 +27,7 @@ Print c.
 Assign a = b.
 Assign b = c.
 6.Stop the program.
-
+```
 ## PROGRAM:
  ```
 /*
